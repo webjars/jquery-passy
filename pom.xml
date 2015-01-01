@@ -103,6 +103,10 @@
                                     </mapper>
                                 </unzip>
                                 <echo message="unzip done" />
+								<echo message="moving resources" />
+                                <move todir="${destDir}">
+                                    <fileset dir="${destDir}/dist/" />
+                                </move>
                             </target>
                         </configuration>
                     </execution>
